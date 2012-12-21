@@ -5,6 +5,12 @@
   <%= @software.name %>
 </p>
 
+<h2>Versions</h2>
+<%= render @software.versions %>
+
+<h3>Add version</h3>
+<%= render 'versions/form' %>
+
 
 <%= link_to 'Edit', edit_software_path(@software) %> |
 <%= link_to 'Back', softwares_path %>

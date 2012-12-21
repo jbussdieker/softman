@@ -1,5 +1,7 @@
 Softman::Application.routes.draw do
-  resources :softwares
+  resources :softwares do
+    resources :versions
+  end
 
 
   devise_for :users
