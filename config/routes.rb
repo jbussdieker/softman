@@ -1,4 +1,7 @@
 Softman::Application.routes.draw do
+  resources :softwares
+
+
   devise_for :users
 
   root :to => "home#index"
