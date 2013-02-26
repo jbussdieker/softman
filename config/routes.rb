@@ -1,4 +1,5 @@
 Softman::Application.routes.draw do
+  match 'whatsmyip' => "home#whatsmyip"
   resources :softwares do
     resources :versions
   end
