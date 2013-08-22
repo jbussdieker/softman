@@ -7,7 +7,7 @@ class HomeController < ApplicationController
   end
 
   def waitforit
-    sleep params[:sleep]
+    sleep params[:sleep].to_i
     render :text => "Legendary"
   end
 end
